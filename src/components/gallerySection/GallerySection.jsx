@@ -41,7 +41,7 @@ const GallerySection = () => {
   };
 
   return (
-    <div className='bg-[#363C43] h-[29vh] min-w-[37%] mt-[5.5%] ml-[3%] z-30 rounded-[21px] overflow-y-auto flex'>
+    <div className='bg-[#363C43] h-[29vh] min-w-[37%] mt-[5.5%] ml-[2%] z-30 rounded-[21px] overflow-y-auto flex'>
       <div className='bg-transparent ml-[7px] mr-[2px] mt-[14px] flex flex-col gap-[104px]'>
         <HiOutlineQuestionMarkCircle className='bg-transparent text-[#A3ADB2]' />
         <img className='w-[13px]' src={cube} alt='image of the cube' />
@@ -80,12 +80,12 @@ const GallerySection = () => {
             </button>
           </div>
         </div>
-        <div className='bg-transparent flex  mt-[21px] items-center  mx-[7%] '>
+        <div className='bg-transparent flex  mt-[21px] items-center  mx-1 '>
           {images.length > 0 ? (
             imagesToDisplay?.map((image, index) => {
               return (
                 <img
-                  className='w-[150px] h-[160px] rounded-[24px] ml-[10%]'
+                  className='w-[150px] h-[160px] rounded-[24px] ml-[5%]'
                   key={index}
                   src={image}
                   alt={`Image ${index + 1}`}
